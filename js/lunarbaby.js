@@ -376,7 +376,7 @@ window.onload = function() {
         this.actionCount = this.ability + gaussianSample() * 2;
       } else {
         // otherwise continue moving
-        // this.float();
+        this.float();
         this.movementCounter += 1;
       }
       this.blink();
