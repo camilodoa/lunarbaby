@@ -17,11 +17,18 @@ var Neuron = class {
     this.refactory = refactory; // refactory period max
     this.leak = leak; // voltage leak
     this.counter = counter; // refactory period counter
+    this.error = 0;
   }
   in = function(voltage) {
     // If cell is in the refactory period, do nothing
     // Otherwise integrate
     this.input += this.counter < this.refactory ? 0 : voltage;
+    // Keep track of which neuron this was
+    if (this.reward[id] !== undefined) {
+      this.reward[id] += 1;
+    } else {
+      this.reward[id] = 1;
+    }
     return this.input;
   }
   out = function() {

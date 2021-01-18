@@ -1,7 +1,7 @@
 /*
-camilo ortiz, 2020, camilodoa.ml
+camilo ortiz, 2021, camilodoa.ml
 
-A Life in the browser
+Artificial life in the browser
 
 dependencies:
 paper.js
@@ -242,11 +242,6 @@ window.onload = function() {
       } else if (this.blinking) {
         this.blinkCounter += 1;
       }
-    },
-    wave: function () {
-      /*
-      todo this wave animation that also depends on movement
-       */
     },
     /*
     symbol position
